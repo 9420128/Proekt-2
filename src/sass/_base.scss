@@ -1,0 +1,9 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: $color-bg;
+  color: $color-font;
+}
+
+.container-fluid.has-width-limit {
+  max-width: 1600px;
+}
