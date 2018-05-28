@@ -1,15 +1,38 @@
-extends _layouts/home
+extends _layouts/head
 
 block content
+
+	header.header
+		.topL
+			.container
+				.topL__row
+					ul.topL-left__ul
+						li.topL-left__li.topL-left__activ
+							a(href="#" class="topL__a") Санкт- Петербург <span class="ikon-caret"></span>
+							ul.dropdown-ul
+								li
+									a(href="#") г. Пушкин
+								li
+									a(href="#") Гатчина
+								li
+									a(href="#") Красное село
+						li
+							a 8 812 942-01-28
+					ul.topL-rigt__ul
+						li
+							a(href="#") Заказать замер
+						li
+							a(href="#") Обратный звонок
+
+
+
+
+
+
+			
+
+
+
+
 	
-	.js-page-slider.page-slider
-		div
-			include _partials/page-1
-		div
-			include _partials/page-2
-		div
-			.page-slide 3
-		div
-			.page-slide 4
-		div
-			.page-slide 5
+	

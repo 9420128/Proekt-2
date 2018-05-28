@@ -1,39 +1,90 @@
 //@import обязательно указывается расширение .css
 
-@import "_variables";
-@import "_mixins";
-@import "_placeholders";
-
-// Bootstrap
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/reboot";
-
-@import "node_modules/bootstrap/scss/grid";
-@import "node_modules/bootstrap/scss/utilities/flex";
-@import "node_modules/bootstrap/scss/utilities/float";
-@import "node_modules/bootstrap/scss/utilities/clearfix";
-@import "node_modules/bootstrap/scss/utilities/display";
-
 @import "_base";
-@import "components/_text";
-@import "components/_buttons";
-@import "components/_page-slider";
-@import "components/_work-slider";
+@import "_mixins.sass";
+@import "m-style";
+@import "smart-grid";
+@include reset();
 
+/* Header
+	======================= */
+.header {
 
+}
+.topL {
+	background: $color1;
+	
 
-// 1. Your custom variables and variable overwrites.
-$global-link-color: #DA7D02;
-$global-margin: 20px;
+}
+.container {
+	@include wrapper;
 
-// 2. Import default variables and available mixins.
-@import "node_modules/uikit/src/scss/variables-theme";
-@import "node_modules/uikit/src/scss/mixins-theme";
+}
+.topL {
+	&__row {
+		height: 80px;
+		@include row-flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 14px;
+	}
 
-// 3. Your custom mixin overwrites.
-@mixin hook-card() { color: #000; }
+}
 
-// 4. Import UIkit.
-@import "node_modules/uikit/src/scss/uikit-theme";
+.topL-left__ul,
+.topL-rigt__ul {
+	list-style: none;
+	display: flex;
+	
+	a {
+		line-height: 80px;
+		text-decoration: none;
+		display: block;
+		padding: 0 20px;
+		color: $colorW;
+
+		&:hover,
+		&:active {
+			color: $color2;
+		}
+	}
+}
+
+.topL-left__li {
+	position: relative;
+	
+	&:hover {
+		.dropdown-ul {
+			color: red;
+			opacity: 1;
+			margin-top: 0;
+			left: 0;
+			visibility: visible;
+		}
+	}
+}
+.dropdown-ul {
+	position: absolute;
+	background-color: $color4;
+	padding: 20px;
+	width: 250px;
+	opacity: 0;
+	margin-left: -15px;
+	transition: opacity 0.3s, margin-top 0.1s;
+	margin-top: 30px;
+	visibility: hidden;
+	left: -10000px
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 100%;
+		@include arr(14, 7, $color4, t);
+		left: 40px;
+	}
+
+	a {
+		line-height: 30px;
+	}
+}

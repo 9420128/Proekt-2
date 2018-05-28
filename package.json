@@ -6,8 +6,7 @@
   "author": "",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build",
-    "start": "gulp"
+    "build": "gulp build"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -21,6 +20,7 @@
     "gulp-js-minify": "0.0.3",
     "gulp-pug": "^3.0.3",
     "gulp-sass": "^4.0.1",
+    "smart-grid": "^2.0.1",
     "uikit": "^3.0.0-beta.42"
   },
   "repository": {
