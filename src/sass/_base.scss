@@ -1,11 +1,54 @@
-
-$color1: #2c3e50;
+$color1: #303031; //#2c3e50
 $color2: #db7b3b;
 $color3 :#777;
 $color4 :#404042;
 $colorW :#fff;
+$border-color: #404042;
+$color-text: #3d3d3d;
+
 body {
   font-family: 'Montserrat', sans-serif;
+}
+
+a, area, button, input, label, select, summary, textarea {
+    touch-action: manipulation;
+}
+
+a {text-decoration: none;}
+
+.text-center {
+  text-align: center;
+}
+
+main {
+    padding: 80px 0;
+}
+h1 {
+    font-family: Ubuntu;
+    font-size: 50px;
+    line-height: 1.1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-text;
+  }
+
+.btn {
+    overflow: visible;
+    color: inherit;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+    line-height: 52px;
+    text-align: center;
+    text-decoration: none;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color,background-position,border-color,box-shadow;
+    background-origin: border-box;
+}
+
+.btn-default {
+    color: #fe7902;
+    border: 2px solid #fe7902;
 }
 
 

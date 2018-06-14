@@ -2,14 +2,14 @@ extends _layouts/head
 
 block content
 
-	header.header
+	header.header.cover(style="background-image: url('img/balkon-w-hruschevke-6.jpg')")
 		.topL
 			.container
-				.topL__row
+				.row-between
 					ul.topL-left__ul
 						li.topL-left__li.topL-left__activ
-							a(href="#" class="topL__a") Санкт- Петербург <span class="ikon-caret"></span>
-							ul.dropdown-ul
+							a(href="#" class="topL__a") Санкт- Петербург <span class="icon-caret-down"></span>
+							ul.drop
 								li
 									a(href="#") г. Пушкин
 								li
@@ -17,12 +17,158 @@ block content
 								li
 									a(href="#") Красное село
 						li
-							a 8 812 942-01-28
+							a(href="tel:+78129420128" class="tel") 8 812 942-01-28
 					ul.topL-rigt__ul
 						li
-							a(href="#") Заказать замер
-						li
-							a(href="#") Обратный звонок
+							a(href="#" class="") Заказать замер
+		.menu
+			.container
+				.row-between
+					.logo
+						a(href="/")
+							img(src="img/logo.svg" alt="")
+					nav.nav
+						a(href="#" class="nav__btn")
+							span
+						ul.nav__ul
+							li
+								a(href="/plastikovye_okna_spb.html") Окна <span class="icon-caret-down"></span>
+								.drop-menu
+									ul
+										li
+											a(href="/veka.html") Окна Veka
+										li
+											a(href="/plastikovye_okna_ekonom.html") Окна ПВХ эконом
+										li
+											a(href="/windows.html") Окна ПВХ стандарт
+										li
+											a(href="/plastikovye_okna_exspert.html") Окна ПВХ эксперт
+										li
+											a(href="/osteklenie_balkonov_v_SPb.html") Пластиковые окна Sliders
+										li
+											a(href="/osteklenie_slidors_panorama.html") Sliders Panorama
+										li
+											a(href="/osteklenie_balkonov_st-petersburg.html") Алюминиевые окна
+										li
+											a(href="/furnitura.html") Фурнитура
+										li
+											a(href="/ystanovka_okon_petersburg.html") Установка окон
+							li
+								a(href="/osteklenie_balkonov_petersburg.html") Остекление <span class="icon-caret-down"></span>
+								.drop-menu
+									ul
+										li
+											a(href="/provedal_slidors.html") Раздвижное остекление
+										li
+											a(href="/osteklenie_loggia_v_SPb.html") Остекление лоджий
+										li
+											a(href="/osteklenie-balkonov-s-kryshej.html") Остекление с крышей
+										li
+											a(href="/osteklenie-i-otdelka-balkonov-lodzhy.html") Остекление и отделка
+										li
+											a(href="/panoramnoe-osteklenie-balkonov.html") Панорамное остекление
+										li
+											a(href="/yteplenie_okon_petersburg.html") Утепление окон
+							li
+								a(href="/balkon_otdelka.html") Отделка <span class="icon-caret-down"></span>
+								.drop-menu
+									ul
+										li
+											a(href="/loggia_petersburg.html") Отделка лоджий
+										li
+											a(href="/balkon_petersburg.html") Обшивка вагонкой ПВХ
+										li
+											a(href="/otdelka-balkonov-panelyami.html") Обшивка панелями ПВХ
+										li
+											a(href="/otdelka_balkonov_petersburg.html") Обшивка вагонкой
+										li
+											a(href="/info_1.html") Обшивка сайдингом
+										li
+											a(href="/balkon_iz_polikarbonata.html") Отделка поликарбонатом
+										li
+											a(href="/ukreplenie-balkona.html") Укрепление балконов
+										li
+											a(href="/svarka-balkona.html") Сварка балкона
+										li
+											a(href="/uteplenie-balkonov.html") Утепление балконов
+							li
+								a(href="/krysha-kozyrek-na-balkon.html") Крыши <span class="icon-caret-down"></span>
+								.drop-menu
+									ul
+										li
+											a(href="/krysha-balkona.html") Сварная крыша
+										li
+											a(href="/krysha-balkona-iz-brusa.html") Крыша из бруса
+										li
+											a(href="/kozyrek-nad-balkonom-iz-polikarbonata.html") Крыша из поликарбоната
+										li
+											a(href="/krysha-na-balkon-iz-profnastila.html") Крыша из профнастила
+							li
+								a(href="/serii_domov.html") Цены <span class="icon-caret-down"></span>
+								.drop-menu
+									ul
+										li
+											a(href="/balkon_st-petersburg.html") Балкон в хрущевке
+										li
+											a(href="/osteklenie-balkonov-v-stalinskix-domax.html") Балкон в сталинке
+										li
+											a(href="/osteklenie_balkona_137.html") 137 серия
+										li
+											a(href="/otdelka-balkona-5.html") Балкон 5 метров
+										li
+											a(href="/osteklenie_loggia_st-petersburg.html") Лоджия в корабле
+										li
+											a(href="/otdelka-lodzhii-v-panelnom-dome.html") Лоджия 3,7 метра
+										li
+											a(href="/balcon_6_metrov.html") Лоджия 6 метров
+										li
+											a(href="/calculator-otdelki.html") Калькулятор отделки
+										li
+											a(href="/calculator-osteklenie-balkonov.html") Калькулятор остекления
+										li
+											a(href="/calculator-slidors.html") Ккалькулятор Slidors
+										li
+											a(href="/price.html") Прайс-Лист
+							li
+								a(href="/balkon-foto.html") Фото <span class="icon-caret-down"></span>
+								.drop-menu
+									ul
+										li
+											a(href="/plastikovye-balkony-foto.html") Пластиковое остекление
+										li
+											a(href="/alyuminievoe-osteklenie-balkona-foto.html") Алюминиевое остекление
+										li
+											a(href="/balkon-v-hrushhevke-foto.html") Балкон в хрущевке
+										li
+											a(href="/otdelka-balkona-panelyami-foto.html") Отделка панелями
+										li
+											a(href="/otdelka-balkonov-vagonkoj-foto.html") Отделка вагонкой
+							li
+								a(href="/contact.html") Контакты
+	section.container
+		.baner-1
+			p привет
+	main.text-center
+		.container
+			h1 Системы для остекления балконов
+			.row
+				.col-3
+					.drop-menu.card-default
+					img(src="" alt="" class="circle")
+					h2.h4 Provedal
+					p Холодное остекление из алюминиевого профиля
+					a(href="" class="") Узнать больше
+				.col-3.card-default
+					img(src="" alt="" class="circle")
+					h2.h4 Provedal
+					p Холодное остекление из алюминиевого профиля
+					a(href="" class="") Узнать больше
+				.col-3.card-default
+					img(src="" alt="" class="circle")
+					h2.h4 Provedal
+					p Холодное остекление из алюминиевого профиля
+					a(href="" class="") Узнать больше
+
 
 
 

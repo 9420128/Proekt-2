@@ -1,0 +1,64 @@
+
+
+// выпадающий список
+
+@import "_base";
+@import "_mixins.sass";
+
+
+
+.dropdown-ul {
+	position: absolute;
+	background-color: $color4;
+	padding: 20px;
+	width: 250px;
+	opacity: 0;
+	margin-left: -15px;
+	transition: opacity 0.3s, margin-top 0.1s;
+	margin-top: 30px;
+	visibility: hidden;
+	left: -10000px
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 100%;
+		@include arr(14, 7, $color4, t);
+		left: 40px;
+	}
+
+	a {
+		line-height: 30px;
+	}
+}
+.dropdown-ul.color-w {
+	background-color: $colorW;
+	border: 1px solid $border-color;
+	
+	a {
+		color: $color3;
+		&:hover {
+			color: $color2;
+		}
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 100%;
+		@include arr(14, 7, $colorW, t);
+		z-index: 2;
+		left: 40px;
+	}
+	
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 100%;
+		@include arr(16, 9, $border-color, t);
+		left: 39px;
+	}
+}
